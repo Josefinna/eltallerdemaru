@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli';
+}
+.todo {
+    display: flex;
+    justify-content: center;
+}
+.container-ventana{ 
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:#ffffff;
+    width: 80%;
+    height: 30%;
+}
+.boton-bordado {
+    background-color: #F7ECEB;
+    color: #6c6a6a62;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.imgmasprod {
+    display: flex;
+    flex-direction: row;
+}
+.imagen-prod{
+    background-image: url('../imágenes/toalla-rosa.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 700px;
+}
+.especificación-prod {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.estrellitas{
+    background-image: url('../imágenes/estrellas.png');
+    width: 200px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.colores{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+.Rosa{
+    background-image: url('../imágenes/rosa.webp') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.Blanco{
+    background-image: url('../imágenes/blanca.webp') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.Gris{
+    background-image: url('../imágenes/gris.webp') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.Verde{
+    background-image: url('../imágenes/verde.webp') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-image: url('../imágenes/toalla-fondo.jpeg');
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor del grid */
+    background-position: center;
+    grid-gap: 1px;
+    width: 400px; 
+    height: 600px;
+  }
+
+.grid-container {
+    display: flex;
+    /* justify-content: left;
+    flex-direction: row;
+    align-items: center; */
+    /* background-color: rgb(148, 197, 73); */
+    margin: 20px;
+}
+.tramitar-pedido {
+    border-radius: 10px;
+    background: #FEC5BB;
+    width: 270px;
+    height: 72px;
+    flex-shrink: 0;
+    color: #6E4A2A;
+    font-family: Muli;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+.titulo-seccion {
+    text-align: left;
+    margin: 4;
+    color: #A8D1D1;
+    font-weight: 700;
+    font-size:40px;
+}
+.subtitulo {
+    /* text-align: left;
+    margin: 10px 0;
+    font-size: large;
+    color: #ffffff; */
+    color: #8E9199;
+    font-family: Muli;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+.grid-and-button {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    padding: 20px; /* Aumenta el espacio interno entre el grid y el botón */
+}
+.grid-and-button input {
+    margin-top: 20px; /* Agrega margen superior al botón */
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.title-container {
+    margin-top: 20px; /* Agrega margen superior para separar el título del contenido anterior */
+    text-align: right; /* Alinea el título a la derecha */
+    margin-left: 150px;
+    color:rgb(255, 255, 255);
+}
+.botoncito {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.escribe {
+   text-align: left;
+    color: #A8D1D1;
+    font-family: Muli;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.explicacion {
+    color: #8E9199;
+    font-family: Muli;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+
+.cell {
+    width: 100%;
+    height:100%;
+    background-size: 100% 100%;
+    background-position: center;
+    transition: background-position 0.2s;
+    border: 1px solid #d1a8b3ad;
+    cursor:cell;
+}
+
+.cell.selected {
+    background-position: center;
+}
